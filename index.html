@@ -25,7 +25,7 @@
         <form id="actionlist">
             <div class="line">
                 <div class="formelement lightred"><label>Task</label><input type="text" class="task" /></div><!--
-                --><div class="formelement lightred"><label>Optimistic</label><input type="number" class="optimistic" /></div><!--
+                --><div class="formelement lightred"><label>Optimistic</label><input type="number" class="optimistic" id="beingtested" /></div><!--
                 --><div class="formelement lightred"><label>Normal</label><input type="number" class="normal" /></div><!--
                 --><div class="formelement lightred"><label>Pesimistic</label><input type="number" class="pesimistic" /></div><!--
                 --><div class="formelement blue"><label>Result</label><input type="number" class="result" readonly disabled /></div><!--
@@ -34,10 +34,7 @@
             <a href="index.html" class="addnext roundbutton">+</a>
             <button id="calculate">Calculate</button>
         </form>
-        <script data-main="js/main.js" src="js/require.js"></script>
-        <script>
-
-        </script>
+        <script data-main="js/main" src="js/require.js"></script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
