@@ -1,5 +1,10 @@
-	// calculate result for all rows
-define(["constructors/Pert"], function(Pert) {
+/*
+functions/doCalculation.js
+
+Defines rules of calculation PERS estimation. Calucates results for all rows.
+*/
+
+define(["constructors/Pert", "functions/validator"], function(Pert, validator) {
 	return function(){
 		var listElements = [];
 		var i;
@@ -8,6 +13,9 @@ define(["constructors/Pert"], function(Pert) {
 		var normal;
 		var pesimistic;
 		var result;
+
+		validator();
+
 		listElements = document.querySelectorAll('.line');
 		length = listElements.length;
 		i = 0;

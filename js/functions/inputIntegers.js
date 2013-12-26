@@ -5,7 +5,7 @@ define(function() {
 		var that = this;
 		function countDigits () {
 			var number = that.value.length;
-			var notTooLong = (number < 2) ? true : false;
+			var notTooLong = (number < 3) ? true : false;
 			return notTooLong;
 		}
 			

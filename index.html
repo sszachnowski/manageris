@@ -20,22 +20,24 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
-        <!-- Add your site or application content here -->
-        <form id="actionlist">
-            <div class="line">
-                <div class="formelement lightred"><label>Task</label><input type="text" class="task" /></div><!--
-                --><div class="formelement lightred"><label>Optimistic</label><input type="number" class="optimistic" id="beingtested" /></div><!--
-                --><div class="formelement lightred"><label>Normal</label><input type="number" class="normal" /></div><!--
-                --><div class="formelement lightred"><label>Pesimistic</label><input type="number" class="pesimistic" /></div><!--
-                --><div class="formelement blue"><label>Result</label><input type="number" class="result" readonly disabled /></div><!--
-                --><a href="index.html" class="removeline">remove task</a>
-            </div>
-            <a href="index.html" class="addnext roundbutton">+</a>
-            <button id="calculate">Calculate</button>
-        </form>
+        <header class="header blue">
+            <span class="logo">Manageris</span>
+        </header>
+        <div class="contentwrapper">
+            <form id="actionlist">
+                <div class="line">
+                    <div class="formelement lightred"><label>Task</label><input type="text" class="task" maxlength="30" /></div><!--
+                    --><div class="formelement lightred"><label>Optimistic</label><input type="number" class="optimistic" id="beingtested" /></div><!--
+                    --><div class="formelement lightred"><label>Normal</label><input type="number" class="normal" /></div><!--
+                    --><div class="formelement lightred"><label>Pesimistic</label><input type="number" class="pesimistic" /></div><!--
+                    --><div class="formelement blue"><label>Result</label><input type="number" class="result" readonly disabled /></div><!--
+                    --><a href="index.html" class="removeline">remove task</a>
+                </div>
+                <a href="index.html" class="addnext roundbutton">+</a>
+                <button id="calculate">Calculate</button>
+            </form>
+        </div>
         <script data-main="js/main" src="js/require.js"></script>
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;

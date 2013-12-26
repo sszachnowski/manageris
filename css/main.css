@@ -99,6 +99,8 @@ textarea {
 
 body {
     background-color: #f2e1ac;
+    text-align: center;
+    color: #161616;
 }
 
 input:invalid {
@@ -118,7 +120,7 @@ input[type="number"], input[type="text"] {
     color: #fff;
 }
 
-.lightred input[type="number"], input[type="text"] {
+.lightred input[type="number"], .lightred input[type="text"] {
     background-color: transparent;
     border-bottom: 1px dashed #cd2c24;
 }
@@ -141,6 +143,7 @@ label {
     display: inline-block;
     padding: 10px;
     margin: 5px;
+    position: relative;
 }
 
 .blue {
@@ -182,17 +185,67 @@ label {
     font-size: 0.75em;
 }
 
+.line {
+    text-align: left;
+}
+
 .line:hover {
     background-color: #f5eac6;
 }
 
+.contentwrapper {
+    width: 80%;
+    margin: 1em auto;
 
+}
 
+.task {
+    width: 20em;
+}
 
+.header {
+    width: 100%;
+    height: 3em;
+    text-align: left;
+    margin: 0;
+}
 
+.logo {
+    font-size: 1.5em;
+    line-height: 2em;
+    margin: 0 1em;
+}
 
+.appear {
+    animation-duration: 3s;
+    animation-name: appear;
+    position: absolute;
+    font-size: 0.75em;
+    background: silver;
+    padding: 5px;
+    z-index: 999;
+}
 
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
 
+    to{
+        opacity: 1;
+    }
+}
+
+.bluetextinput {
+    color: #63a69f;
+}
+
+.bluetextinput input {
+    background-color: transparent;
+    color: gray;
+    border-bottom: 1px dashed #63a69f;
+
+}
 
 
 
